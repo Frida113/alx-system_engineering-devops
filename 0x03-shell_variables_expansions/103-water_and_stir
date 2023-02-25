@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER=water STIR=stir. eval "echo \$(echo \"ibase=5; \$WATER\" | bc) + \$(echo \"ibase=5; \$STIR\" | bc) | bc | xargs printf \"%o\n\""
+WATER=water STIR=stir. eval "echo \$(echo \"ibase=5; \$WATER\" | tr) + \$(echo \"ibase=5; \$STIR\" | tr) | tr | xargs printf \"%o\n\""
